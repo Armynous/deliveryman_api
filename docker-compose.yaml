@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: deliveryman-db
+    environment:
+      POSTGRES_DB: deliveryman
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
